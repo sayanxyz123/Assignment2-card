@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="root">
+
+    </div>
+    <script>
+      let x=  React.createElement('div',{id:"main",style:{
+        height:"400px",
+        width:"300px",
+        border:"1px solid black"
+        
+        
+      }},[
+        React.createElement('img',{src:"https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg",height:"160px",width:"300px",paddingTop:"20px"}),
+        React.createElement('h2',{style:{
+            color:"red",
+            display:"flex",
+            justifyContent:"center"
+        }},"Sayantan Roy"),
+        React.createElement('p',{style:{
+        color:"blue",
+        marginTop:"none",
+        display:"flex",
+            justifyContent:"center",
+            marginTop:"-10px"
+    }},"ui/ux developer"),
+    React.createElement('div',{style:{
+        display:"flex",
+    justifyContent:"space-Evenly"
+    }},[
+    React.createElement('h4',null,"60"),
+    React.createElement('h4',null,"90"),
+    React.createElement('h4',null,"120")  
+    ]),
+    React.createElement('div',{style:{
+        display:"flex",
+    justifyContent:"space-Evenly",
+    marginTop:"-24px"
+    }},[
+    React.createElement('p',null,"shoot"),
+    React.createElement('p',null,"following"),
+    React.createElement('p',null,"followers")  
+    ])
+
+      ])
+        ReactDOM.render(x,document.getElementById('root'))
+    </script>
+    
+</body>
+</html>
